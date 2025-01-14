@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 20s;
+}
+
+body {
+    font-family: sans-serif;
+    background: rgb(71, 32, 18);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(222, 100, 56);
+}
+
+h2 {
+    color: #de6438;
+}
+
+p {
+    color: rgb(222, 100, 56);
+}
+
+
+/* The header */
+header {
+    background: black;
+    height: 100vh;
+}
+
+#myName{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 90px;
+    place-content: center;
+    align-items: center;
+    margin: 200px 35%;
+}
+
+.navigation ul{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin: 0px 30px 20px 30px;
+}
+
+.navigation a {
+    font-size: 190%;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/* the about section  */
+.about {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+.about p{
+    margin: 80px 100px 40px 200px;
+    font-size: 30px;
+}
+
+/* inspire button  */
+.about a {
+    margin: 20px 35% 0 ;
+    width: 500px;
+    padding: 30px 15px 30px 150px;
+    background: #de6438;
+    font-size: 30px;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.223);
+}
+.about a:hover {
+    background: #b1502d;
+    transition: 0.2s;
+}
+
+.about .underline {
+    margin: 10% 0 0 17%;
+}
+
+.about h1 {
+    margin: 20px 40px;
+    font-size: 40px;
+    padding-right: 180px;
+}
+#aboutTitle {
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 10px 0 190px;
+}
+#aboutContent p {
+    margin: 20px 10px;
+}
+
+
+
+
+/* projects  */
+.projects {
+    display: flex;
+}
+
+.projects h1{
+    margin: 80px 100px 40px 250px;
+    font-size: 40px;
+}
+
+.projects .underline {
+    margin: 10% 0 0 17%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#projects .underline {
+    margin-left: 15%;
+}
+
+.contacts h1{
+    margin: 80px 100px 40px 250px;
+    font-size: 40px;
+}
+
+.contacts .underline {
+    margin: 10% 0 0 17%;
+}
+.contacts p{
+    font-size: 22px;
+}
+.contacts a{
+    font-size: 22px;
+}
+.contacts a {
+    /* margin: 20px 35% 500px ;/ */
+    width: 500px;
+    padding: 30px 15px 30px 50px;
+    background: #de6438;
+    font-size: 30px;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.223);
+}
+.contacts a:hover {
+    background: #b1502d;
+    transition: 0.2s;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    font-size: 22px;
+    margin: 2% 30%;
+    
+}
+
+footer a {
+    color: #de6438;
+}
