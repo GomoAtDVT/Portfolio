@@ -119,12 +119,15 @@ header {
 .projects {
     display: flex;
 }
-
+.projects a {
+    margin: 250px 30px 0;
+    padding: 50px;
+    background: #ff7e5f;
+}
 .projects h1{
     margin: 80px 100px 40px 250px;
     font-size: 40px;
 }
-
 .projects .underline {
     margin: 10% 0 0 17%;
 }
@@ -132,19 +135,8 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-#projects .underline {
-    margin-left: 15%;
+.contacts {
+    display: block;
 }
 
 .contacts h1{
@@ -162,9 +154,9 @@ header {
     font-size: 22px;
 }
 .contacts a {
-    /* margin: 20px 35% 500px ;/ */
+    margin: 90px ;
     width: 500px;
-    padding: 30px 15px 30px 50px;
+    padding: 30px 35px 30px 40px;
     background: #de6438;
     font-size: 30px;
     color: #000000;
