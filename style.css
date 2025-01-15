@@ -36,8 +36,12 @@ p {
 
 
 /* The header */
-header {
-    background: black;
+header { 
+    background-image: url('images/headshot.JPG');
+    background-position: center;
+    background-size:cover;
+    /* background-repeat: no-repeat; */
+    /* background: black; */
     height: 100vh;
 }
 
@@ -48,6 +52,11 @@ header {
     place-content: center;
     align-items: center;
     margin: 200px 35%;
+    opacity: 70%;
+    animation: fade 3s infinite alternate;
+}
+@keyframes fade {
+    to { opacity: 0%;}
 }
 
 .navigation ul{
@@ -58,12 +67,28 @@ header {
 }
 
 .navigation a {
+    /* border: 2px solid blue; */
     font-size: 190%;
     background: linear-gradient(to right, #ff7e5f, #feb47b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+
+.scroll-down a {
+    color: #de6438;
+}
+.scroll-down {
+    /* transition: 2s; */
+    display: inline-block;
+    font-size: 35px;
+    margin: 6rem 0 0 30px;
+    width: 190px;
+    animation: bounce .5s infinite alternate;
+}
+@keyframes bounce {
+  to { transform: translateY(40%); }
+}
 
 
 /* the about section  */
@@ -89,6 +114,7 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.223);
 }
+    
 .about a:hover {
     background: #b1502d;
     transition: 0.2s;
@@ -121,15 +147,25 @@ header {
 
 /* projects  */
 .projects {
-    display: block;
-
+    display: inline-block;
 }
-.projects div {
+.projects a {
+    margin:0 90px;
+}
+.projects img {
     display: flex;
-    margin: 80px 50px;
-    padding: 350px 150px;
-    background: #ff7e5f;
-   }
+    margin: 80px 70px;
+    width: 610px;
+    /* padding: 250px 100px; */
+    
+    border: 10px solid rgb(71, 32, 18);  
+    box-shadow: 0 0 0 4px #000; 
+}
+.projects img:hover{
+
+    transition: .3s;
+    transform: scale(1.02);
+}
 .projects h1 {
     margin: 80px 100px 40px 250px;
     font-size: 40px;
@@ -161,6 +197,7 @@ header {
 }
 .contacts p{
     font-size: 22px;
+    margin: 0px 20px 0px 280px;
 }
 .contacts a{
     font-size: 22px;
