@@ -6,12 +6,12 @@
 
 html {
     scroll-behavior: smooth;
-    transition: 20s;
+    
 }
 
 body {
     font-family: sans-serif;
-    background: rgb(71, 32, 18);
+    background: rgb(67, 40, 24);
 }
 
 li {
@@ -23,15 +23,15 @@ a {
 }
 
 h1 {
-    color: rgb(222, 100, 56);
+    color:#BB9457;
 }
 
 h2 {
-    color: #de6438;
+    color: #BB9457;
 }
 
 p {
-    color: rgb(222, 100, 56);
+    color: #FFE6A7;
 }
 
 
@@ -40,88 +40,52 @@ header {
     background-image: url('images/headshot.JPG');
     background-position: center;
     background-size:cover;
-    /* background-repeat: no-repeat; */
-    /* background: black; */
     height: 100vh;
 }
 
 #myName{
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
-    font-size: 90px;
-    place-content: center;
-    align-items: center;
-    margin: 200px 35%;
-    opacity: 70%;
+    font-size: 130px;
+    padding-top: 60px;
+    margin: 0px 32%;
+    opacity: 80%;
     animation: fade 3s infinite alternate;
 }
 @keyframes fade {
     to { opacity: 0%;}
 }
 
-.navigation ul{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
-    margin: 0px 30px 20px 30px;
-}
-
-.navigation a {
-    /* border: 2px solid blue; */
-    font-size: 190%;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 
-.scroll-down a {
-    color: #de6438;
-}
-.scroll-down {
-    /* transition: 2s; */
-    display: inline-block;
+.track {
+    display: grid;
+    position: fixed;
     font-size: 35px;
-    margin: 6rem 0 0 30px;
-    width: 190px;
-    animation: bounce .5s infinite alternate;
+    margin-top: -70px;
+    margin-left: 50px;
+    padding: 25px;
+    border: 2px solid #FFE6A7;
+    border-radius: 1em;
+    opacity: 80%;
 }
-@keyframes bounce {
-  to { transform: translateY(40%); }
+.track a {
+    color: #FFE6A7;
+    margin: 2rem 0;   
+}
+.track a:active{
+    color: #6F1D1B;
 }
 
 
 /* the about section  */
-.about {
-    display: flex;
-    flex-direction: column;
-    place-content: center;
-}
 
 .about p{
-    margin: 80px 100px 40px 200px;
     font-size: 30px;
-}
-
-/* inspire button  */
-.about a {
-    margin: 20px 35% 0 ;
-    width: 500px;
-    padding: 30px 15px 30px 150px;
-    background: #de6438;
-    font-size: 30px;
-    color: #000000;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.223);
-}
-    
-.about a:hover {
-    background: #b1502d;
-    transition: 0.2s;
 }
 
 .about .underline {
-    margin: 10% 0 0 17%;
+    margin: 10% 0 0 10%;
 }
 
 .about h1 {
@@ -131,50 +95,69 @@ header {
 }
 #aboutTitle {
     display: flex;
-    justify-content: space-between;
-    margin: 90px 10px 0 190px;
+    margin: 90px 20px 0 150px;
 }
 #aboutContent p {
-    margin: 20px 10px;
+    margin: 20px 10px 0 -10px;
 }
 
 
-.pop{
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: 1fr 1fr;
-}
 
 /* projects  */
-.projects {
-    display: inline-block;
-}
-.projects a {
-    margin:0 90px;
-}
-.projects img {
-    display: flex;
-    margin: 80px 70px;
-    width: 610px;
-    /* padding: 250px 100px; */
-    
-    border: 10px solid rgb(71, 32, 18);  
-    box-shadow: 0 0 0 4px #000; 
-}
-.projects img:hover{
 
-    transition: .3s;
-    transform: scale(1.02);
-}
+
 .projects h1 {
-    margin: 80px 100px 40px 250px;
+    margin: 80px 100px 40px 650px;
     font-size: 40px;
 }
-.projects .underline {
-    margin: 10% 0 0 17%;
+
+.carousel {
+    position: relative;
+    /* height: max-content; */
+    /* max-width: 1900px; */
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 5% 25% 0;
 }
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFE6A7;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-control.prev {
+    left: 10px;   
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
 .underline {
-    margin: 10% 0 0 17%;
+    margin: 10% 0 0 10%;
 }
 
 
@@ -188,47 +171,42 @@ header {
     margin: 0 30px 0 30px;
 }
 .contacts h1{
-    margin: 80px 100px 40px 250px;
+    margin: 80px 100px 40px 650px;
     font-size: 40px;
 }
 
 .contacts .underline {
-    margin: 10% 0 0 17%;
+    margin: 10% 0 0 10%;
 }
 .contacts p{
     font-size: 22px;
-    margin: 0px 20px 0px 280px;
+    margin: 0px 20px 0px 525px;
 }
 .contacts a{
     font-size: 22px;
 }
-.contacts a {
-    margin: 0 20px 0px 280px;
-    width: 500px;
-    padding: 30px 35px 30px 40px;
-    background: #de6438;
-    font-size: 30px;
-    color: #000000;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.223);
+.technologies {
+    display: flex;
+    place-content: center;
+    margin: 20px 0 0 0;
 }
-.contacts a:hover {
-    background: #b1502d;
-    transition: 0.2s;
+.technologies a{
+    color: #FFE6A7;
+    font-size: 100px;
+    padding-right: 30px;
 }
-/* 
-.contactContent {
-    margin: 5rem;
-} */
+
+.technologies p {
+    margin: 0;
+}
 footer {
     display: flex;
-    flex-direction: column;
+    place-content: center;
     height: 10vh;
     font-size: 22px;
     margin: 5% 30%;
-    
 }
 
 footer a {
-    color: #de6438;
+    color: #FFE6A7;
 }
